@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package 
+    xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements-->
+        <id>Naxam.RCMessageKit.iOS</id>
+        <version>1.1.0</version>
+        <authors>NAXAM CO.,LTD</authors>
+        <owners>NAXAM CO.,LTD</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <title>Naxam - RCMessageKit for iOS</title>
+        <summary>Xamarin.iOS Binding Library - RCMessageKit</summary>
+        <description>Xamarin.iOS Binding Library - RCMessageKit</description>
+        <releaseNotes>RCMessageKit iOS v1.1.0</releaseNotes>
+        <iconUrl>https://avatars1.githubusercontent.com/u/25535951</iconUrl>
+        <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+        <projectUrl>https://github.com/NAXAM/rcmessagekit-ios-binding</projectUrl>
+        <copyright>Copyright (c) 2017 NAXAM</copyright>
+        <tags>Xamarin.iOS, rcmessagekit</tags>
+    </metadata>
+    <!-- Optional 'files' node -->
+    <files>
+        <file src="Naxam.RCMessageKit.iOS/bin/Release/Naxam.RCMessageKit.iOS.dll" target="lib/Xamarin.iOS10/Naxam.RCMessageKit.iOS.dll" />
+    </files>
+</package>

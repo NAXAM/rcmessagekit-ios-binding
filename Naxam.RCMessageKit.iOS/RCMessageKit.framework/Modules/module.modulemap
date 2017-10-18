@@ -1,0 +1,6 @@
+framework module RCMessageKit {
+  umbrella header "RCMessageKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{E7A69EAF-F1FB-40AD-894E-BD83819C5D38}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>RCMessageKitQs</RootNamespace>
+    <AssemblyName>RCMessageKitQs</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>53177</IOSDebuggerPort>
+    <MtouchLink>Full</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <DeviceSpecificBuild>false</DeviceSpecificBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants></DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <DefineConstants></DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>22921</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\chat_callaudio.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\chat_callaudio.imageset\chat_callaudio%402x.png" />
+    <ImageAsset Include="Assets.xcassets\chat_callvideo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\chat_callvideo.imageset\chat_callvideo%402x.png" />
+    <ImageAsset Include="Assets.xcassets\chat_camera.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\chat_camera.imageset\chat_camera%402x.png" />
+    <ImageAsset Include="Assets.xcassets\chat_location.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\chat_location.imageset\chat_location%402x.png" />
+    <ImageAsset Include="Assets.xcassets\chat_picture.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\chat_picture.imageset\chat_picture%402x.png" />
+    <ImageAsset Include="Assets.xcassets\chat_sticker.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\chat_sticker.imageset\chat_sticker%402x.png" />
+    <ImageAsset Include="Assets.xcassets\chat_video.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\chat_video.imageset\chat_video%402x.png" />
+    <ImageAsset Include="Assets.xcassets\chat_back.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\chat_back.imageset\chat_back%402x.png" />
+    <ImageAsset Include="Assets.xcassets\rcmessage_attach.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\rcmessage_attach.imageset\rcmessage_attach%402x.png" />
+    <ImageAsset Include="Assets.xcassets\rcmessage_send.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\rcmessage_send.imageset\rcmessage_send%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\" />
+    <Folder Include="Sevices\" />
+    <Folder Include="Assets.xcassets\chat_callaudio.imageset\" />
+    <Folder Include="Assets.xcassets\chat_callvideo.imageset\" />
+    <Folder Include="Assets.xcassets\chat_camera.imageset\" />
+    <Folder Include="Assets.xcassets\chat_location.imageset\" />
+    <Folder Include="Assets.xcassets\chat_picture.imageset\" />
+    <Folder Include="Assets.xcassets\chat_sticker.imageset\" />
+    <Folder Include="Assets.xcassets\chat_video.imageset\" />
+    <Folder Include="Assets.xcassets\chat_back.imageset\" />
+    <Folder Include="Assets.xcassets\rcmessage_attach.imageset\" />
+    <Folder Include="Assets.xcassets\rcmessage_send.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBMessage.cs" />
+    <Compile Include="Views\ChatView.cs" />
+    <Compile Include="Views\ChatView.designer.cs">
+      <DependentUpon>ChatView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sevices\DataConversation.cs" />
+    <Compile Include="Views\PictureView.cs" />
+    <Compile Include="Views\PictureView.designer.cs">
+      <DependentUpon>PictureView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VideoView.cs" />
+    <Compile Include="Views\VideoView.designer.cs">
+      <DependentUpon>VideoView.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Naxam.RCMessageKit.iOS\Naxam.RCMessageKit.iOS.csproj">
+      <Project>{C5D78737-01F4-412E-9A13-CD98BCC4ED55}</Project>
+      <Name>Naxam.RCMessageKit.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\UserAvatar.png" />
+    <BundleResource Include="Resources\NaxamAvatar.png" />
+    <BundleResource Include="Resources\ImageVideo.jpg" />
+    <BundleResource Include="Resources\imgMap.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
